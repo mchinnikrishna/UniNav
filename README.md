@@ -57,7 +57,5 @@
 
 For questions or collaboration, reach out to the team at:
 
-- Nikilesh Madala – [nikileshm@vt.edu](mailto:nikileshm@vt.edu)
-- Divakara Rao Annepu - [adivakararao@vt.edu](mailto:adivakararao@vt.edu)
-- Aparna Alamanda - [aparnaa@vt.edu](mailto:aparnaa@vt.edu)
-- Radhika Bhumireddi - [radhikab@vt.edu](mailto:radhikab@vt.edu)
+- Chinni krishna – [Royalchinnikrish3@gmail.com](mailto:Royalchinnikrish3@gmail.com)
+  
