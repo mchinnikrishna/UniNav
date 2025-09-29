@@ -1,0 +1,121 @@
+.notifications-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+.notifications-title {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.notifications-tabs-wrapper {
+    display: flex;
+    gap: 2rem;  /* Increased from 1rem for more spacing between tabs */
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;  /* Increased padding for better spacing */
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    justify-content: center;  /* Centers the tabs in the wrapper */
+    width: 100%;  /* Ensures full width */
+}
+
+.notifications-tab {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;  /* Increased from 0.5rem for better icon-text spacing */
+    padding: 1.2rem 2rem;  /* Increased padding for larger click area */
+    border: none;
+    border-radius: 8px;
+    background: transparent;
+    color: #64748b;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    min-width: 160px;  /* Ensures minimum width for each tab */
+    justify-content: center;  /* Centers the content within each tab */
+    border: 1px solid #e2e8f0;
+}
+
+.notifications-tab.active {
+    background: #DD2255;
+    color: white;
+}
+
+.tab-icon {
+    font-size: 1.2rem;
+}
+
+.notification-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #DD5577;
+    color: white;
+    border-radius: 50%;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.notifications-content {
+    display: grid;
+    gap: 1rem;
+}
+
+.notification-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.notification-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.notification-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.notification-icon {
+    color: #3b82f6;
+    font-size: 1.2rem;
+}
+
+.notification-time {
+    color: #64748b;
+    font-size: 0.875rem;
+}
+
+.notification-title {
+    font-size: 1.1rem;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+}
+
+.notification-message {
+    color: #64748b;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .tabs-wrapper {
+        flex-direction: column;
+    }
+
+    .tab {
+        width: 100%;
+        justify-content: center;
+    }
+}

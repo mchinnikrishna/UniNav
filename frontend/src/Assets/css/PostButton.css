@@ -1,0 +1,105 @@
+.fancy {
+    background-color: #e8e8e8;
+    border: 2px solid #DD2255;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: crosshair;
+    display: inline-block;
+    float: right;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 1.25em 2em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+    font-size: 11px;
+}
+
+.fancy::before {
+    content: "+";
+    font-size: 24px;
+    width: auto; /* Adjust width to fit the + symbol */
+    height: auto; /* Adjust height to fit the + symbol */
+    background: none; /* Remove background color */
+    top: 45%;
+    left: 1em;
+    position: absolute;
+    transform: translateY(-50%);
+    transform-origin: center;
+    transition: color 0.3s linear;
+    color: #DD2255; /* Set color for the + symbol */
+}
+
+.fancy .text {
+    font-size: 1.125em;
+    line-height: 1.33333em;
+    padding-left: 2em;
+    display: block;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #DD2255;
+}
+
+.fancy .top-key {
+    height: 2px;
+    width: 1.5625rem;
+    top: -2px;
+    left: 0.625rem;
+    position: absolute;
+    background: #e6eef9;
+    transition: width 0.5s ease-out, left 0.3s ease-out;
+}
+
+.fancy .bottom-key-1 {
+    height: 2px;
+    width: 1.5625rem;
+    right: 1.875rem;
+    bottom: -2px;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy .bottom-key-2 {
+    height: 2px;
+    width: 0.625rem;
+    right: 0.625rem;
+    bottom: -2px;
+    position: absolute;
+    background: #ffffff;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy:hover {
+    color: white;
+    background: #DD2255;
+}
+
+.fancy:hover::before {
+    color: white; /* Change color on hover */
+}
+
+.fancy:hover .text {
+    color: white;
+    padding-left: 1.5em;
+}
+
+.fancy:hover .top-key {
+    left: -2px;
+    width: 0px;
+}
+
+.fancy:hover .bottom-key-1,
+.fancy:hover .bottom-key-2 {
+    right: 0;
+    width: 0;
+}

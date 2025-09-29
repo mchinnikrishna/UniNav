@@ -1,0 +1,113 @@
+.post-event-container {
+    display: flex;
+    width: calc(100% - 6%); /* Adjusting for 20% sidebar width when expanded */
+    height: 100vh;
+    transition: width 0.3s; /* Smooth transition when sidebar toggles */
+}
+
+/* Adjust width when the sidebar is collapsed */
+.sidebar.hover + .post-event-container {
+    width: calc(100% - 15%); /* Adjusting for 6% sidebar width when collapsed */
+}
+
+/* Map component styling */
+.map-component-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 2%;
+    background-color: #ffffff;
+    /*overflow: auto;*/
+    border-radius: 5px;/* Optional background color for clarity */
+}
+
+/* Post event form styling */
+.post-event-form-container {
+    flex: 1;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 2%;
+    overflow-y: auto; /* Allow scrolling if form overflows vertically */
+    background-color: #fff; /* Optional background color for clarity */
+}
+
+.w3w-map-component{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: auto;
+}
+
+.fullscreen-map {
+    width: 100%;
+    height: 100%;
+    position: absolute; /* Position the map absolutely within the container */
+    top: 0;
+    left: 0;
+}
+.post-event-verification-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1000;
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 767px) {
+    .post-event-container {
+        flex-direction: column; /* Stack elements vertically */
+        height: auto; /* Adjust height for smaller screens */
+    }
+
+    .map-component-container,
+    .post-event-form-container {
+        width: 100%; /* Full width for smaller screens */
+        height: 50vh; /* Adjust height for smaller screens */
+    }
+}
+
+.unverified-user-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin: 2rem auto;
+    background-color: White;
+    border-radius: 8px;
+    max-width: 600px;
+    text-align: center;
+}
+
+.unverified-user-container h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #343a40;
+}
+
+.unverified-user-container p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #6c757d;
+}
+
+.unverified-user-container .btn-primary {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+}

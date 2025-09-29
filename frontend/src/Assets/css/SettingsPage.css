@@ -1,0 +1,79 @@
+.settings-page {
+    transform: scale(0.9);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+}
+
+.user-details-section .profile-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.header-section .title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header-section .subtitle {
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.alert {
+    background-color: #6f42c1;
+    color: white;
+}
+
+.notifications-section .notification-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.admins-section .admin-avatar,
+.danger-zone .user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.danger-zone h5 {
+    font-size: 18px;
+}
+
+.footer-section {
+    margin-top: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-section .btn {
+    width: 120px;
+}
+
+/*Verification Form*/
+
+.user-verification-form-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background-color: rgba(0, 0, 0, 0.5);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.user-verification-form {
+    max-width: 600px;
+    max-height: 100vh;
+    width: 100%;
+    background-color: white;
+    /*border-radius: 8px;*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}

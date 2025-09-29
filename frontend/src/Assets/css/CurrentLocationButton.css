@@ -1,0 +1,39 @@
+.Btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 140px;
+    height: 40px;
+    border: none;
+    padding: 0px 15px;
+    background-color: #dd2255;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+    transition-duration: 0.3s;
+}
+
+.svg {
+    width: 20px; /* Updated width */
+    height: 18px; /* Updated height */
+    position: absolute;
+    right: 20px; /* Make sure this matches your padding */
+    fill: white;
+    transition: all 0.3s ease; /* Ensure smooth transitions */
+}
+
+.Btn:hover {
+    color: transparent;
+}
+
+.Btn:hover .svg {
+    right: 43%; /* Adjust this to control how far it moves */
+}
+
+.Btn:active {
+    transform: translate(3px, 3px);
+    transition-duration: 0.3s;
+    box-shadow: 2px 2px 0px rgb(140, 32, 212);
+}

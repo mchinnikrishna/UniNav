@@ -1,0 +1,47 @@
+/* UserVerificationForm.css */
+.verification-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5px;
+    width: 100%;
+    background-color: #f8f9fa;
+    overflow-y: auto;
+}
+
+.form-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.image-section {
+    background-image: url('../../Assets/images/User-Verification.png'); /* Replace with actual image path */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promo-image {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.preview-image {
+    max-width: 200px;
+    border-radius: 8px;
+}
+
+.size-limit{
+    color: rgba(255, 0, 0, 0.7); /* Light faded red color */
+}

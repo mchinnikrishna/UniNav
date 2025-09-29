@@ -1,0 +1,281 @@
+.event-card {
+    height: 300px;
+    width: 175px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    max-width: 300px;
+    margin: 16px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.event-card {
+    height: 300px;
+    width: 175px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    max-width: 300px;
+    margin: 16px;
+    background-color: #fff;
+}
+
+.event-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.event-card-image {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    background-color: #e6e6e6;
+    border-bottom: 1px solid #ddd;
+}
+
+.event-card-content {
+    padding: 12px;
+}
+
+.event-card-title {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.event-card-description {
+    font-size: 0.9em;
+    color: #666;
+    line-height: 1.4;
+    margin: 0 0 12px;
+    max-height: 45px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.event-card-link {
+    text-decoration: none;
+    color: #1a73e8;
+    font-weight: 500;
+    font-size: 0.9em;
+    transition: color 0.2s;
+}
+
+.event-card-link:hover {
+    color: #0c47b6;
+    text-decoration: underline;
+}
+
+/* Options */
+.event-card-options {
+    position: relative;
+    display: inline-block;
+    left: 15px;
+}
+
+.options-button {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #555;
+    transition: color 0.2s;
+}
+
+.options-button:hover {
+    color: #333;
+}
+
+.options-dropdown {
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.event-card-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding: 0 0.5rem;
+}
+
+.event-card-link{
+    margin-top: 1rem;
+}
+
+.action-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.action-button:hover {
+    transform: scale(1.1);
+    color: #dd2255;
+}
+
+.event-card-link, .options-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.options-dropdown button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    text-align: left;
+    font-size: 0.9em;
+    background: none;
+    border: none;
+    color: #333;
+    transition: background 0.2s, color 0.2s;
+}
+
+.options-dropdown button:hover {
+    background-color: #f4f4f4;
+}
+
+.event-card .framer-motion {
+    border-radius: 12px; /* Match the card's shape */
+}
+
+/* Ensures card content stays on top */
+.event-card .relative.z-20 {
+    z-index: 2; /* Higher than the overlay */
+}
+
+.event-card-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    background-color: #e6e6e6;
+    border-bottom: 1px solid #ddd;
+}
+
+.event-card-content {
+    padding: 12px;
+}
+
+.event-card-title {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.event-card-description {
+    font-size: 0.9em;
+    color: #666;
+    line-height: 1.4;
+    margin: 0 0 12px;
+    max-height: 45px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.event-card-link {
+    text-decoration: none;
+    color: #1a73e8;
+    font-weight: 500;
+    font-size: 0.9em;
+    display: inline-block;
+    transition: color 0.2s;
+}
+
+.event-card-link:hover {
+    color: #0c47b6;
+    text-decoration: underline;
+}
+
+/* Options */
+.event-card-options {
+    position: relative;
+    display: inline-block;
+    left: 15px;
+}
+
+.options-button {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #555;
+    padding: 4px;
+    transition: color 0.2s;
+}
+
+.options-button:hover {
+    color: #333;
+}
+
+.options-dropdown {
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.options-dropdown button {
+    background: none;
+    border: none;
+    padding: 10px 16px;
+    width: 100%;
+    text-align: left;
+    font-size: 0.9em;
+    cursor: pointer;
+    color: #333;
+    transition: background 0.2s, color 0.2s;
+}
+
+.options-dropdown button:hover {
+    background-color: #f4f4f4;
+}
+
+.share-options-container {
+    position: fixed;
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+/*Delete*/
+
+.delete-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.delete-button:hover {
+    color: #dd2255;
+    transform: scale(1.3);
+}

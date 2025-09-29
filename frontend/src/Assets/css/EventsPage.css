@@ -1,0 +1,173 @@
+.event-cards-page {
+    padding: 20px;
+    width: calc(100% - 6%); /* Adjusting for 20% sidebar width when expanded */
+    height: 100vh;
+    transition: width 0.3s; /* Smooth transition when sidebar toggles */
+    overflow: auto;
+}
+
+
+.sidebar.hover + .event-cards-page {
+    width: calc(100% - 15%);
+}
+
+.filter-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*align-items: flex-start;*/
+    margin-bottom: 2vh;
+    padding: 1vh;
+    gap: 1rem;
+}
+
+.filter-bar > div {
+    flex-grow: 1;
+}
+
+
+.search-container {
+    flex-grow: 1;
+    margin-right: 2vh;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /*max-width: 600px;*/
+    background-color: white;
+    border-radius: 100px;
+    padding: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search__button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0 1rem;
+}
+
+.search__icon {
+    color: #666;
+}
+
+.search__input {
+    width: 100%;
+    border: none;
+    background: none;
+    padding: 0.5rem;
+}
+
+.search__input .MuiInputBase-root {
+    width: 100%;
+    padding: 0;
+}
+.search__input .MuiInputBase-input {
+    padding: 8px 12px !important;
+    height: auto !important;
+}
+
+.search__input .MuiAutocomplete-input {
+    padding: 0 !important;
+    height: 24px !important;
+}
+
+.MuiAutocomplete-root .MuiFormControl-root {
+    padding-right: 16px;
+}
+/* Style for the autocomplete dropdown */
+.MuiAutocomplete-popper {
+    margin-top: 8px !important;
+    border-radius: 12px !important;
+}
+
+
+.dropdowns {
+    display: flex;
+    gap: 1rem;
+    margin-left: auto; /* Push the dropdowns to the right */
+    align-self: flex-start;
+}
+
+.custom-dropdown {
+    width: 18vh;
+    padding: 0.8vh;
+    font-size: 1em;
+    border: 0.1vh solid black;
+    border-radius: 0.4vh;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    position: relative;
+    transition: 300ms;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.custom-dropdown option {
+    background-color: White;
+    color: Black;
+}
+
+.custom-dropdown:focus {
+    outline: none;
+    border-color: #555;
+}
+
+.event-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 20vh; /* Ensure a minimum height to maintain layout */
+    width: 180vh;
+}
+
+.MuiTabs-root {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.MuiTab-root {
+    text-transform: none;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #757575 !important;
+}
+
+.MuiTabs-indicator {
+    background-color: #dd2255 !important;
+}
+
+
+.MuiTab-root.Mui-selected {
+    color: #dd2255 !important;
+}
+
+/*Mic*/
+.mic__button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0 1rem;
+}
+
+.mic__icon {
+    color: #666;
+}
+
+.mic__button.listening {
+    color: #dd2255;
+}
+
+.mic__button.listening .mic__icon {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}

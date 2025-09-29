@@ -1,0 +1,162 @@
+/* Sidebar container */
+.sidebar {
+    width: 6%; /* Collapsed state width */
+    height: 100vh;
+    background-color: #1f2937;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    transition: width 0.3s;
+    z-index: 1000; /* Ensure it's above other elements */
+    overflow: hidden; /* Prevent text overflow */
+}
+
+.sidebar:hover {
+    width: 15%; /* Expanded state width on hover */
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+    transition: all 0.3s ease;
+    filter: invert(1);
+}
+
+.collapsed-logo {
+    display: block;
+}
+
+.expanded-logo {
+    display: none;
+}
+
+.sidebar:hover .collapsed-logo {
+    display: none;
+}
+
+.sidebar:hover .expanded-logo {
+    display: block;
+}
+
+/* Navigation list */
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the nav-icon when sidebar is collapsed */
+    padding: 15px 0; /* Adjust padding for vertical centering */
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    text-decoration: none;
+    color: inherit;
+}
+
+.sidebar:hover .nav-item {
+    justify-content: flex-start; /* Align to the left when expanded */
+    padding: 15px 20px; /* Restore padding when expanded */
+}
+
+.nav-item:hover {
+    background-color: #334155;
+    color: #db2254;
+}
+
+.nav-item:hover .nav-label {
+    color: #db2254; /* Ensure the label changes color when the whole item is hovered */
+}
+
+.nav-item.active {
+    color: #db2254;
+}
+
+.nav-item.active .nav-label {
+    color: #db2254;
+}
+
+.nav-icon {
+    font-size: 20px;
+}
+
+.nav-label {
+    margin-left: 10px;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+    display: none; /* Hidden by default */
+}
+
+.sidebar:hover .nav-label {
+    display: inline; /* Show labels on hover */
+}
+
+.badge {
+    background-color: #dc2f5d;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 12px;
+    margin-left: 5px;
+}
+
+/* Profile section */
+.profile-section {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+    border-top: 1px solid #334155;
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.profile-details {
+    margin-left: 10px;
+    display: none; /* Hidden by default */
+}
+
+.sidebar:hover .profile-details {
+    display: block; /* Show profile details on hover */
+}
+
+.profile-name {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+@media (max-width: 767px) {
+    .sidebar {
+        width: 80px;
+    }
+}
+
+.login-icon {
+    font-size: 24px;
+    color: #28a745;
+    cursor: pointer;
+}
+
+.user-signin-button {
+    transition: opacity 0.3s;
+    width: 100%;
+    text-align: center;
+}

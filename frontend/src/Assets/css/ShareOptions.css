@@ -1,0 +1,121 @@
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.up {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
+
+.down {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
+
+.card1, .card2, .card3, .card4, .card5 {
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.instagram, .facebook, .copy, .twitter, .linkedin {
+}
+
+.card2{
+    color: #1877f2;
+}
+.card3{
+    color: Black;
+}
+.card4{
+    color: lightgray;
+}
+.card5{
+    color: #0e76a8;
+}
+
+.card1:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #cc39a4;
+}
+
+.card1:hover .instagram {
+    fill: white;
+}
+
+.card2:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #1877f2;
+}
+
+.card2:hover .facebook {
+    fill: white;
+}
+
+.card3:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: Black;
+}
+
+.card3:hover .twitter {
+    fill: white;
+}
+
+.card4:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: lightgray;
+}
+
+.card4:hover .copy {
+    fill: white;
+}
+
+.card5:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #0e76a8;
+}
+
+.card5:hover .linkedin {
+    fill: white;
+}
+
+/* Tooltip */
+.tooltip {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 1000;
+    bottom: 130%; /* Increased from 125% to create more space */
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.2s;
+    font-size: 14px;
+}
+
+.card1:hover .tooltip, .card2:hover .tooltip, .card3:hover .tooltip, .card4:hover .tooltip, .card5:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}

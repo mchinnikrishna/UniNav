@@ -1,0 +1,58 @@
+.map-wrapper {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    transition: margin-left 0.3s;
+    position: relative;
+}
+
+.map-component {
+    width: 100%;
+    height: 100%; /* Adjust height to fit within the new height of the App component */
+    background-color: #fff;
+    overflow: hidden; /* Allow scrolling if content overflows */
+}
+
+.map-container {
+    flex-grow: 1;
+    position: relative;
+}
+
+.tabs-container {
+    position: absolute;
+    top: 1vh;
+    right: 25vh;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+/*Post*/
+.post-button-container {
+    position: absolute;
+    top: 1vh;
+    right: 15vh;
+    z-index: 1000;
+}
+
+.user-profile-container{
+    backface-visibility: hidden;
+    position: absolute;
+    top: 15vh;
+    right: 2vh;
+    z-index: 1000;
+    background: #f9f9f9;
+}
+
+.user-profile-button{
+    background: #f9f9f9;
+}
+
+.user-signin-button{
+    background: #f9f9f9;
+}
+
+.current-location{
+    position: absolute;
+    left: 1vh;
+    top: 90vh;
+}

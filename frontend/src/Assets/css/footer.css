@@ -1,0 +1,9 @@
+/* Custom CSS styles */
+.bi {
+    font-size: 2rem; /* Adjust icon size */
+    color: rgba(0, 0, 0, 0.62); /* Default color */
+}
+
+.bi:hover {
+    color: rgb(103, 208, 79); /* Change color on hover */
+}
