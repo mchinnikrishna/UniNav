@@ -58,4 +58,6 @@
 For questions or collaboration, reach out to the team at:
 
 - Chinni krishna – [Royalchinnikrish3@gmail.com](mailto:Royalchinnikrish3@gmail.com)
+- Harshana Reddy - [harshanareddyg@gmail.com](mailto:harshnareddyg@gmail.com)
+- Pravalika Reddy -[Pravalika.muthanagari@gmail.com](mailto:Pravalika.muthanagari@gmail.com)
   
